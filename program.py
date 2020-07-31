@@ -7,7 +7,6 @@ def main_menu():
     print("PYTHON BINARY REPRESENTATION")
     print("^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-")
     n = int(input("Please enter a natural number to represent it as a sum of distinct non-negative integer powers of 2:"))
-    print(convert_to_binary(n))
     print(sum_representation(convert_to_binary(n)))
 
 def convert_to_binary(n:int) -> str:
