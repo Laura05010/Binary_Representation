@@ -8,6 +8,14 @@ def main_menu():
     print("^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-")
     n = int(input("Please enter a natural number to represent it as a sum of distinct non-negative integer powers of 2:"))
     print(sum_representation(convert_to_binary(n)))
+    wait = input("Convert another number? y/n ").lower()
+
+    if wait[0] == "y":
+        n = int(input("Please enter a natural number to represent it as a sum of distinct non-negative integer powers of 2:"))
+        print(sum_representation(convert_to_binary(n)))
+    else:
+        print("Thanks for using the program! Have a great day :)")
+        sys.exit()
 
 def convert_to_binary(n:int) -> str:
     rep = ""
